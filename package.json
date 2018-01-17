@@ -2,6 +2,14 @@
   "name": "cors-shenanigans",
   "version": "0.1.0",
   "private": true,
+  "proxy": {
+    "/stitchfix": {
+      "target": "https://www.stitchfix.com",
+      "secure": false,
+      "changeOrigin": true,
+      "pathRewrite": {"^/stitchfix" : ""}
+    }
+  },
   "dependencies": {
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
